@@ -22,7 +22,7 @@ public class AgentService(IAgentHandler agentHandler) : IAgentService
             toolResources: new ToolResources { CodeInterpreter = codeInterpreterToolResource },
             setThread: true);
 
-        var userMessage = "what can you tell me about microservices in .net based on perspectives from Christian Horsdal Gammelgaard?";
+        var userMessage = "what can you tell me about AI and work trends?";
         var additionalInstructions = "";
         var runResponse = await agentHandler.CreateAndRunUserMessageAsync(userMessage, additionalInstructions);
 
